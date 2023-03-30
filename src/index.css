@@ -1,5 +1,25 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+
+
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400&display=swap');
+@import url('https://db.onlinewebfonts.com/c/17539719b4e0eb2d54284f9ecce700e1?family=Amazing+Kids');
+@import url('https://api.fontshare.com/v2/css?f[]=pencerio@50&display=swap');
+
+@layer base {
+    body {
+        @apply font-[Satoshi]
+    }
+    h1 {
+        @apply font-[Clash-display]
+    }
+    h2 {
+        @apply font-[Amazing+Kids]
+    }
+}
+
+.header {
+    @apply font-[Pencerio]
+}

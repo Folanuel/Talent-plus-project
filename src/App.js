@@ -1,32 +1,30 @@
 import React from 'react';
+import About from './components/About';
+import About2 from './components/About2';
+import Bannerone from './components/Bannerone';
+import Community from './components/Community';
+import Community2 from './components/Community2';
+import Courses from './components/Courses';
+import Footer from './components/Footer';
+import Main from './components/Main';
+import {Navbar} from './components/Navbar';
+import Questions from './components/Questions';
+import Testimonial from './components/Testimonial';
 
 function App() {
   return (
-    <div className="flex flex-col h-full items-center justify-center bg-gray-200 text-gray-700">
-      <div className="flex items-center">
-        <h1 className="text-6xl font-thin tracking-wider">Create React App + Tailwind CSS</h1>
-      </div>
-      <p className="my-6 tracking-wide">
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <div className="mt-6 flex justify-center">
-        <a
-          className="uppercase hover:underline"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          className="ml-10 uppercase hover:underline"
-          href="https://tailwindcss.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Tailwind
-        </a>
-      </div>
+    <div className='App'>
+      <Navbar /> 
+      <Main />      
+      <Bannerone />
+      <About />
+      <About2 />
+      <Courses />
+      <Testimonial />
+      <Community />
+      <Community2 />
+      <Questions />    
+      <Footer />  
     </div>
   );
 }
